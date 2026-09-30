@@ -1,0 +1,14 @@
+Tak for dit svar, {{name}}
+
+{{surveyTitle}} - {{date}}
+
+Vi har modtaget din besvarelse og vender tilbage, hvis der er behov for det.
+Denne mail er din kvittering - du behoever ikke at svare paa den.
+
+{{answersText}}
+
+Venlig hilsen
+{{senderName}}
+
+---
+Du modtager denne mail, fordi {{email}} blev angivet i formularen "{{surveyTitle}}".

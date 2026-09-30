@@ -1,0 +1,73 @@
+{
+  "title": "Tilmelding og feedback",
+  "intro": "Udfyld skemaet nedenfor. Når du har sendt det, får du med det samme en bekræftelse på den e-mailadresse, du skriver i skemaet.",
+  "submitLabel": "Send mine svar",
+  "privacyNote": "Vi bruger kun dine svar til det formål, der er beskrevet ovenfor, og sender dig en kvittering på mail.",
+  "emailField": "email",
+  "nameField": "navn",
+  "thankYou": {
+    "heading": "Tak for dit svar!",
+    "body": "Vi har modtaget dine svar, og der er sendt en bekræftelse til {{email}}. Tjek eventuelt dit spamfilter, hvis mailen ikke dukker op inden for et par minutter."
+  },
+  "email": {
+    "subject": "Tak for dit svar – {{surveyTitle}}",
+    "replyTo": "",
+    "includeAnswers": true
+  },
+  "questions": [
+    {
+      "id": "navn",
+      "type": "text",
+      "label": "Dit navn",
+      "placeholder": "Fornavn og efternavn",
+      "required": true,
+      "maxLength": 120
+    },
+    {
+      "id": "email",
+      "type": "email",
+      "label": "Din e-mailadresse",
+      "placeholder": "navn@eksempel.dk",
+      "help": "Bekræftelsen bliver sendt hertil.",
+      "required": true
+    },
+    {
+      "id": "rolle",
+      "type": "radio",
+      "label": "Hvad beskriver dig bedst?",
+      "required": true,
+      "options": ["Privatperson", "Virksomhed", "Forening", "Andet"]
+    },
+    {
+      "id": "emner",
+      "type": "checkbox",
+      "label": "Hvad vil du gerne høre mere om?",
+      "help": "Sæt gerne flere kryds.",
+      "required": false,
+      "options": ["Nyhedsbrev", "Kommende arrangementer", "Produktnyheder", "Samarbejde"]
+    },
+    {
+      "id": "tilfredshed",
+      "type": "rating",
+      "label": "Hvor tilfreds er du samlet set?",
+      "max": 5,
+      "minLabel": "Slet ikke tilfreds",
+      "maxLabel": "Meget tilfreds",
+      "required": true
+    },
+    {
+      "id": "kommentar",
+      "type": "textarea",
+      "label": "Har du kommentarer eller ønsker?",
+      "placeholder": "Skriv gerne et par ord …",
+      "required": false,
+      "maxLength": 2000
+    },
+    {
+      "id": "samtykke",
+      "type": "consent",
+      "label": "Ja tak, I må kontakte mig på den angivne e-mail.",
+      "required": true
+    }
+  ]
+}

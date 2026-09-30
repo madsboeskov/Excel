@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{surveyTitle}}</title>
+  </head>
+  <body style="margin:0;padding:0;background:#f4f5f7;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#1f2430;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f4f5f7;padding:24px 12px;">
+      <tr>
+        <td align="center">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;background:#ffffff;border-radius:12px;overflow:hidden;border:1px solid #e3e6ec;">
+            <tr>
+              <td style="padding:28px 32px 8px 32px;">
+                <h1 style="margin:0 0 4px 0;font-size:20px;line-height:1.3;">Tak for dit svar, {{name}}</h1>
+                <p style="margin:0;color:#6b7280;font-size:14px;">{{surveyTitle}} &middot; {{date}}</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:12px 32px 0 32px;font-size:15px;line-height:1.6;">
+                <p style="margin:0 0 14px 0;">Vi har modtaget din besvarelse og vender tilbage, hvis der er behov for det.</p>
+                <p style="margin:0 0 14px 0;">Denne mail er din kvittering &ndash; du behøver ikke at svare på den.</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:8px 32px 0 32px;">{{answersHtml}}</td>
+            </tr>
+            <tr>
+              <td style="padding:24px 32px 28px 32px;font-size:15px;line-height:1.6;">
+                <p style="margin:0 0 4px 0;">Venlig hilsen</p>
+                <p style="margin:0;font-weight:600;">{{senderName}}</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:16px 32px;background:#fafbfc;border-top:1px solid #e3e6ec;color:#6b7280;font-size:12px;line-height:1.5;">
+                Du modtager denne mail, fordi {{email}} blev angivet i formularen &ldquo;{{surveyTitle}}&rdquo;.
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -15,6 +15,12 @@ called **DCF**.
   to the Capital IQ cells (green), so refreshing the data in the same layout
   updates the model. Projection drivers are yellow cells you can overwrite.
 
+## Also in this repository
+
+| Folder | Purpose |
+| --- | --- |
+| `survey/` | A small website with a questionnaire that automatically e-mails a confirmation to whoever fills it in, and stores the answers for download as CSV. See [`survey/README.md`](survey/README.md) (in Danish). |
+
 ## Files
 
 | File | Purpose |

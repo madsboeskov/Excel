@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Spørgeskema</title>
+    <meta name="description" content="Udfyld spørgeskemaet og få automatisk en bekræftelse på mail." />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='13' font-size='13'>📝</text></svg>" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="card" id="card" aria-busy="true">
+        <header class="card__head">
+          <h1 id="survey-title">Henter spørgeskema …</h1>
+          <p class="intro" id="survey-intro"></p>
+        </header>
+
+        <form id="survey-form" novalidate hidden>
+          <div id="questions"></div>
+
+          <!-- Honeypot: usynligt for mennesker, udfyldes typisk af robotter. -->
+          <div class="hp" aria-hidden="true">
+            <label for="_hp">Lad dette felt stå tomt</label>
+            <input type="text" id="_hp" name="_hp" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <p class="privacy" id="privacy"></p>
+
+          <div class="alert alert--error" id="form-error" role="alert" hidden></div>
+
+          <button type="submit" class="submit" id="submit">
+            <span class="submit__label">Send</span>
+            <span class="spinner" aria-hidden="true"></span>
+          </button>
+        </form>
+
+        <div class="done" id="done" hidden>
+          <div class="done__mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
+          </div>
+          <h2 id="done-heading">Tak for dit svar!</h2>
+          <p id="done-body"></p>
+          <p class="alert alert--warn" id="mail-warning" hidden>
+            Vi kunne ikke sende bekræftelsen lige nu. Dine svar er gemt, og vi følger op manuelt.
+          </p>
+          <button type="button" class="link" id="again">Udfyld skemaet igen</button>
+        </div>
+      </section>
+      <p class="foot" id="foot"></p>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
